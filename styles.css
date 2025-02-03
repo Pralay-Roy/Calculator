@@ -11,9 +11,17 @@ body{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
 }
+@media (max-width: 600px) {
+    .calculator {
+      width: 90%;
+      font-size: 1.2em;  /* Adjust the font size on small screens */
+    }
+  }
+  
 #display{
     width: 98%;
     height: 100px;
@@ -34,13 +42,13 @@ body{
 }
 
 button {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     border-radius: 50px;
     border: none;
     background-color: rgb(75, 82, 82);
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
 }
